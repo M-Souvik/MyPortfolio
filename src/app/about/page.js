@@ -26,7 +26,7 @@ const About = () => {
       </motion.div>
       <div className="grid grid-cols-2">
         <div className="">
-          <h1 className="text-xl text-center mb-10 mt-12">Hi,I am Souvik Mondal. I am currently pursuing my degree on BE in IT from Universal College of engineering, Kaman, Bhiwandi Road. I am a self-motivated person,who is passionate about web development. I am a team player. </h1> 
+          <h1 className="text-xl text-center mb-10 mt-12">Hi,I am Souvik Mondal. I am currently pursuing my degree on BE in IT from Universal College of engineering, Kaman, Bhiwandi Road. I am currently in 2nd year. I am a self-motivated person,who is passionate about web development. I am a team player. I have hands-on-experience on HTML,CSS,JavaScript and frameworks like nextjs, nodejs and expressjs. </h1> 
           <div className="flex flex-row gap-5 m-7 justify-between ">
             <button className="bg-transparent w-full text-center focus:border-b-4 focus:border-blue-600 transition duration-900 ease-in-out" onClick={handleQualifications}>Educational Qualifications</button>
             <div class="divider lg:divider-horizontal"></div> 
@@ -47,6 +47,7 @@ const About = () => {
               </li>
               <li className=''>
               <p className="text-xl font-semibold">Currently pursuing my degree on B.E on Information Technology from Universal College of Engineering</p>
+              <p className="text-sm font-thin">GPA: 8.7</p>
               </li>
             </ul>
           </div>

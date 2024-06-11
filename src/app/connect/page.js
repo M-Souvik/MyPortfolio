@@ -35,7 +35,12 @@ const Connect = () => {
 
   return (
     <>
-        <h1 className="text-4xl font-bold mb-4 text-center text-slate-400 bg">Want to Connect with Me...?</h1>
+        <motion.div className="w-full h-fit opacity-65 " animate={{ y: [0, -20, 0] }}
+      transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}>
+      <h1 className="text-white text-center text-6xl font-bold font-abel w-full ">
+        WANT TO CONNECT WITH ME...?
+      </h1>
+      </motion.div>
     <div className="flex justify-center min-h-screen bg-transparent ">
         <div className="w-96">
         <form onSubmit={handleSubmit} className="w-full h-full mt-12">
