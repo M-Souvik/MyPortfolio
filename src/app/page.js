@@ -36,19 +36,19 @@ export default function Home() {
        <p className="text-center text-8xl font-abel font-extrabold">Souvik Mondal<br/></p>
        <p className="text-blue-500 text-3xl font-abel text-center">Full Stack Web Developer</p>
     <div className="flex flex-row gap-5 justify-center mt-8">
-      <Link href="#" className="rounded-full w-fit h-fit  bg-slate-300 opacity-75">
+      <Link href="https://l1nk.dev/inUXt" className="rounded-full w-fit h-fit  bg-slate-300 opacity-75">
        <FaInstagramSquare size={60} color="black" className="p-2"/>
       </Link>
       <Link href="https://github.com/Zstar246" className="rounded-full w-fit h-fit bg-slate-300 opacity-75">
       <IoLogoGithub size={60} color="black" className="p-2"/>
       </Link>
-      <Link href="#" className="rounded-full w-fit h-fit bg-slate-300 opacity-75">
+      <Link href="https://www.instagram.com/souvik_mondal1?igsh=MXdvbjQxbjNnZmp4Mg==" className="rounded-full w-fit h-fit bg-slate-300 opacity-75">
       <FaLinkedin size={60} color="black" className="p-2"/>
       </Link>
     </div>
     <div className="m-4 flex flex-row gap-5 justify-center">
       <Link className="border-2 border-cyan-500 bg-transparent p-4 rounded-lg hover:bg-cyan-500 transition duration-900 ease-in-out hover:text-black" href="#connect">Connect with me {'>'}</Link>
-      <div className="flex"><a className="flex gap-2 border-2 border-cyan-500 bg-cyan-500 text-black p-4 rounded-lg hover:bg-transparent transition duration-900 ease-in-out hover:text-slate-800" href="https://drive.google.com/uc?export=download&id=10ULHFGHcMGxk3NE3nXEvFzJOvlrG6ozI" download>Download CV <FaFileDownload /></a></div>
+      <a className="flex justify-center gap-2 border-2 border-cyan-500 bg-cyan-500 text-black p-4 rounded-lg hover:bg-transparent transition duration-900 ease-in-out hover:text-slate-800" href="https://drive.google.com/uc?export=download&id=10ULHFGHcMGxk3NE3nXEvFzJOvlrG6ozI" download>Download CV <FaFileDownload size={20}/></a>
     </div>
     </div>
     </div>
@@ -80,7 +80,7 @@ export default function Home() {
           < SiTailwindcss  size={80} color="black" className="p-2"/>
           </div>
       </div>
-      <div className="flex flex-row gap-5 justify-center mb-10 border-b-2 border-gray-500 ">
+      <div className="flex flex-row gap-5 justify-center mb-12 border-b-2 border-gray-500 shadow-lg shadow-slate-500">
           <div className="rounded-full w-fit h-fit bg-red-600 opacity-75">
           < FaJava size={80} color="white" className="p-2"/>
           </div>
@@ -88,13 +88,13 @@ export default function Home() {
           < GrMysql size={80} color="white" className="p-2"/>
           </div>
       </div>
-      <div className="mt-8 border-b-2 border-gray-500">
+      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500">
       <About/>
       </div>
-      <div className="mt-8 border-b-2 border-gray-500 min-h-screen">
+      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500">
         <Project/>
       </div>
-      <div className="mt-8 border-b-2 border-gray-500 min-h-screen">
+      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500">
         <Connect/>
       </div>
     
