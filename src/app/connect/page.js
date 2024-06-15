@@ -1,10 +1,11 @@
 // components/ContactForm.js
 "use client"
 import { useState } from 'react';
+import {motion} from 'framer-motion';
 
 const Connect = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-
+  const [Alert, setAlert]=useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(({ ...formData, [name]: value }));
@@ -22,10 +23,9 @@ const Connect = () => {
       });
 
       if (response.ok) {
-        alert('Message sent successfully!');
         setFormData({ name: '', email: '', message: '' }); // Clear the form
       } else {
-        alert('Failed to send message.');
+        setAlert(true);
       }
     } catch (error) {
       console.error('Error sending message:', error);
@@ -35,7 +35,7 @@ const Connect = () => {
 
   return (
     <>
-        <motion.div className="w-full h-fit opacity-65 " animate={{ y: [0, -20, 0] }}
+        <motion.div className="w-full h-fit opacity-65 " animate={{ y: [0, -20, 0] }} id='connect'
       transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}>
       <h1 className="text-white text-center text-6xl font-bold font-abel w-full ">
         WANT TO CONNECT WITH ME...?
