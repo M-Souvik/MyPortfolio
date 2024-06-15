@@ -8,7 +8,7 @@ export default function Nav() {
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li><Link href="#personalinfo" className="text-lg pt-3" >Developer's Info</Link></li>
+      <li><Link href="#personalinfo" className="text-lg pt-3" >Developer&apos;s Info</Link></li>
       <li>
         {/* <details>
           <summary>
