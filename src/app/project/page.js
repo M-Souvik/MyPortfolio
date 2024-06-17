@@ -22,7 +22,7 @@ const ProjectContent = () => {
           <div>
             <h1 className="text-3xl font-semibold">Promptomania</h1>
             <p className="text-xl font-thin mt-6">
-              {context.example} - Promptomania is a Mern-based Project through which users can know what type of prompts they can give to the AI like ChatGPT, Blackbox AI, etc.
+              {context.example}
             </p>
             <div className="flex flex-row gap-6 mt-9">
               <Link href= "https://promptomania-2-g9t96k35i-souvik-mondals-projects.vercel.app"

@@ -7,7 +7,7 @@ export const useMyContext = () => {
 };
 
 export const MyContextProvider = ({ children }) => {
-  const value = { example: "Hello World" };
+  const value = { example: "Promptomania is a Mern-based Project through which users can know what type of prompts they can give to the AI like ChatGPT, Blackbox AI, etc." };
 
   return (
     <MyContext.Provider value={value}>
