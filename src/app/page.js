@@ -88,13 +88,13 @@ export default function Home() {
           < GrMysql size={80} color="white" className="p-2"/>
           </div>
       </div>
-      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500">
+      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500 w-fit">
       <About/>
       </div>
-      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500">
+      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500 w-fit">
         <Project/>
       </div>
-      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500">
+      <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500 w-fit">
         <Connect/>
       </div>
     

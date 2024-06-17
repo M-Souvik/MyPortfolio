@@ -17,8 +17,8 @@ const ProjectContent = () => {
           PROJECT STATION
         </h1>
       </motion.div>
-      <div className='grid grid-cols-3 mt-16 gap-6'>
-        <div className="col-span-2 flex flex-row justify-center">
+      <div className='grid grid-cols-2 mt-16  h-fit w-fit'>
+        <div className="flex flex-row justify-center">
           <div>
             <h1 className="text-3xl font-semibold">Promptomania</h1>
             <p className="text-xl font-thin mt-6">
