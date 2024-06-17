@@ -42,6 +42,7 @@ const Connect = () => {
       </h1>
       </motion.div>
     <div className="flex justify-center min-h-screen bg-transparent ">
+      <p className="text-center text-3xl ">Hey there, If you want to connect to me, Please fill in to this form and i will connect to you right away !</p>
         <div className="w-96">
         <form onSubmit={handleSubmit} className="w-full h-full mt-12">
           <div>
