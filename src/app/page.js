@@ -19,15 +19,10 @@ import { FaFileDownload } from "react-icons/fa";
 import ProfilePhoto from '@/components/ProfilePhoto.js'
 import {motion} from 'framer-motion'
 export default function Home() {
-  // const [text] = useTypewriter({
-  //   words: ['Web Developer', 'Student'],
-  //   loop: true,
-  //   delaySpeed: 3000,
-  // });
   return (
     <>
     {/* Desktop Navigation */}
-    <div className="lg:grid hidden grid-cols-2 gap-3 min-h-screen">
+    <div className="lg:grid lg:grid-cols-2 gap-3">
     <div>
         <ProfilePhoto/>
     </div>
