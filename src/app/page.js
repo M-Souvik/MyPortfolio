@@ -9,6 +9,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { SiStrapi } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import About from "./about/page";
 import Project from "./project/page";
@@ -91,6 +92,9 @@ export default function Home() {
           </div>
           <div className="rounded-full w-fit h-fit bg-purple-600 opacity-85 ">
           < SiStrapi size={80} color="white" className="p-2"/>
+          </div>
+          <div className="rounded-full w-fit h-fit bg-green-600 opacity-85 ">
+          < SiMongodb size={80} color="black" className="p-2"/>
           </div>
       </div>
       <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500 w-fit">
