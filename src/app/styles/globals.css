@@ -7,8 +7,10 @@
 *{
     font-family: "Anta", sans-serif;
 }
-body{
-  overflow-x: hidden;
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 html{
   scroll-behavior: smooth;
