@@ -2,10 +2,11 @@
 "use client"
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { toast } from "sonner"
 
 const Connect = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [alert, setAlert] = useState({ show: false, type: '', message: '' });
+  // const [alert, setAlert] = useState({ show: false, type: '', message: '' });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,13 +26,11 @@ const Connect = () => {
 
       if (response.ok) {
         setFormData({ name: '', email: '', message: '' });
-        setAlert({ show: true, type: 'success', message: 'Message sent successfully!' });
-      } else {
-        setAlert({ show: true, type: 'error', message: 'Failed to send message.' });
+        toast("Mission Accomplished! Your Message Sent Successfully.")
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      setAlert({ show: true, type: 'error', message: 'Failed to send message.' });
+      toast("Mission Failed! Failed to send message.")
     }
   };
 
@@ -95,14 +94,6 @@ const Connect = () => {
                 Submit
               </button>
             </div>
-          {alert.show && (
-            <div className={`alert alert-${alert.type} mt-4`}>
-              <div role="alert" class="alert">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span>{alert.message}</span>
-              </div>
-            </div>
-          )}
           </form>
         </div>
       </div>

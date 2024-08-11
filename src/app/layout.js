@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./styles/globals.css";
 import Nav from "@/components/Navbar";
 import Starfield from 'react-starfield';
+import { Toaster } from "@/components/ui/sonner"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         backgroundColor="black"
       />
           {children}
+          <Toaster />
       </body>
     </html>
   );
