@@ -43,11 +43,11 @@ const Connect = () => {
         id="connect"
         transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
       >
-        <h1 className="text-white text-center text-6xl font-bold font-abel w-full ">
+        <h1 className="text-white text-center text-3xl md:text-6xl font-bold font-abel w-full ">
           WANT TO CONNECT WITH ME...?
         </h1>
       </motion.div>
-      <p className="text-center text-3xl ">Hey there, If you want to connect to me, Please fill in to this form and I will connect to you right away!</p>
+      <p className="text-center text-xl md:text-3xl md:p-4 md:mx-10">Hey there, If you want to connect to me, Please fill in to this form and I will connect to you right away!</p>
       <div className="flex justify-center min-h-screen bg-transparent">
         <div className="w-96">
           <form onSubmit={handleSubmit} className="w-full h-full mt-12">

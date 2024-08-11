@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const ProfilePhoto = () => {
   return (
-    <div className="flex mt-36 justify-center h-screen">
+    <div className="flex mt-12 md:mt-36 justify-center">
       <div className="relative w-80 h-80">
         <motion.div
           className="absolute inset-0 border-4 border-blue-500 rounded-full"

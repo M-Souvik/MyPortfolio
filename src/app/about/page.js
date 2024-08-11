@@ -18,13 +18,13 @@ const About = () => {
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
       >
-        <h1 className="text-white text-center text-6xl font-bold font-abel w-full">
+        <h1 className="text-white text-center text-5xl md:text-6xl font-bold font-abel w-full">
           ABOUT ME
         </h1>
       </motion.div>
-      <div className="grid grid-cols-2 ml-8 gap-4">
+      <div className="flex flex-col-reverse justify-center md:grid md:grid-cols-2 p-8 gap-4">
         <div>
-          <h1 className="text-xl text-center mb-10 mt-12">
+          <h1 className="text-lg sm:text-xl  text-center mb-10 sm:mt-12">
             Hi, I am Souvik Mondal. I am currently pursuing my degree in BE in IT from Universal College of Engineering, Kaman, Bhiwandi Road. I am currently in 2nd year. I am a self-motivated person, passionate about web development. I am a team player with hands-on experience in HTML, CSS, JavaScript, and frameworks like Next.js, Node.js, and Express.js.
           </h1>
           <div className="flex flex-row gap-5 m-7 justify-between">

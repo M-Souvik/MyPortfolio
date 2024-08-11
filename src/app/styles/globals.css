@@ -6,7 +6,9 @@
 
 *{
     font-family: "Anta", sans-serif;
-    
+}
+body{
+  overflow-x: hidden;
 }
 html{
   scroll-behavior: smooth;

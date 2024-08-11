@@ -6,6 +6,8 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
 import { FaJava } from "react-icons/fa6";
 import About from "./about/page";
 import Project from "./project/page";
@@ -22,13 +24,13 @@ export default function Home() {
   return (
     <>
     {/* Desktop Navigation */}
-    <div className="lg:grid lg:grid-cols-2 gap-3">
+    <div className="lg:grid lg:grid-cols-2 gap-3 lg:min-h-screen">
     <div>
         <ProfilePhoto/>
     </div>
-    <div className=" opacity-75 rounded-xl mr-4">
-       <h1 className="text-3xl text-white text-center mt-36 font-abel">Myself,</h1>
-       <p className="text-center text-8xl font-abel font-extrabold">Souvik Mondal<br/></p>
+    <div className="">
+       <h1 className="text-xl md:text-3xl text-white text-center mt-4 md:mt-36">Myself,</h1>
+       <p className="text-center text-5xl md:text-8xl font-abel font-extrabold">Souvik Mondal<br/></p>
        <p className="text-blue-500 text-3xl font-abel text-center">Full Stack Web Developer</p>
     <div className="flex flex-row gap-5 justify-center mt-8">
       <Link href="https://l1nk.dev/inUXt" className="rounded-full w-fit h-fit  bg-slate-300 opacity-75">
@@ -50,37 +52,41 @@ export default function Home() {
     <div>
       <motion.div className="w-full h-fit opacity-65 " animate={{ y: [0, -20, 0] }}
       transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}>
-      <h1 className="text-white text-center text-6xl font-bold font-abel w-full ">
+      <h1 className="text-white text-center text-5xl sm:text-6xl font-bold font-abel w-full mt-12 mb-10">
         MY SKILLS
       </h1>
       </motion.div>
 
-      <div className="flex flex-row gap-5 justify-center m-9 ">
+      <div className="grid grid-cols-6 justify-items-center md:flex md:flex-row md:gap-5 gap-2 md:justify-center shadow-lg shadow-slate-500 px-5  pb-6">
           <div className="rounded-full w-fit h-fit bg-orange-600">
           <TiHtml5 size={80} color="white" className="p-2"/>
           </div>
-          <div className="rounded-full w-fit h-fit  bg-blue-600 opacity-75">
+          <div className="rounded-full w-fit h-fit  bg-blue-600 opacity-75  ">
           <DiCss3 size={80} color="white" className="p-2"/>
           </div>
-          <div className="rounded-full w-fit h-fit bg-yellow-300 opacity-75">
+          <div className="rounded-full w-fit h-fit bg-yellow-300 opacity-75  ">
           <TbBrandJavascript size={80} color="white" className="p-2"/>
           </div>
-          <div className="rounded-full w-fit h-fit  bg-blue-800 opacity-75">
+          <div className="rounded-full w-fit h-fit  bg-blue-800 opacity-75 ">
           <FaReact size={80} color="white" className="p-2"/>
           </div>
-          <div className="rounded-full w-fit h-fit  bg-white opacity-75">
+          <div className="rounded-full w-fit h-fit  bg-white opacity-75 ">
           <SiNextdotjs size={80} color="black" className="p-2"/>
           </div>
-          <div className="rounded-full w-fit h-fit  bg-cyan-300 opacity-75">
+          <div className="rounded-full w-fit h-fit  bg-cyan-300 opacity-75 ">
           < SiTailwindcss  size={80} color="black" className="p-2"/>
           </div>
-      </div>
-      <div className="flex flex-row gap-5 justify-center mb-12 border-b-2 border-gray-500 shadow-lg shadow-slate-500">
-          <div className="rounded-full w-fit h-fit bg-red-600 opacity-75">
+          <div className="rounded-full w-fit h-fit bg-red-600 opacity-75 ">
           < FaJava size={80} color="white" className="p-2"/>
           </div>
-          <div className="rounded-full w-fit h-fit bg-orange-600 opacity-75">
+          <div className="rounded-full w-fit h-fit bg-orange-600 opacity-75 ">
           < GrMysql size={80} color="white" className="p-2"/>
+          </div>
+          <div className="rounded-full w-fit h-fit bg-white opacity-75 ">
+          < SiExpress size={80} color="black" className="p-2"/>
+          </div>
+          <div className="rounded-full w-fit h-fit bg-green-600 opacity-85 ">
+          < FaNode size={80} color="black" className="p-2"/>
           </div>
       </div>
       <div className="mt-8 border-b-2 border-gray-500 min-h-screen shadow-lg shadow-slate-500 w-fit">
