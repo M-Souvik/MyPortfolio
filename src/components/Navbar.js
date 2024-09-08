@@ -78,7 +78,7 @@ export default function Nav() {
 
                 {/* Mobile Menu open: "block", Menu closed: "hidden" */}
                 <div
-                    className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative bg-white md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}
+                    className={`absolute inset-x-0 z-100 w-full px-6 py-4 transition-all duration-300 ease-in-out dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative bg-white md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}
                 >
                     <div className="flex flex-col md:flex-row md:mx-6 md:bg-transparent">
                         <Link className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 bg-transparent" href="#personalinfo">Personal Info</Link>

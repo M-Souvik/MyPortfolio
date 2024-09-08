@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 const ProfilePhoto = () => {
   return (
-    <div className="flex mt-12 md:mt-36 justify-center">
-      <div className="relative w-80 h-80">
+    <div className="relative z-0 flex mt-12 md:mt-36 justify-center">
+      <div className="relative z-0 w-80 h-80">
         <motion.div
-          className="absolute inset-0 border-4 border-blue-500 rounded-full"
+          className="absolute z-0 inset-0 border-4 border-blue-500 rounded-full"
           animate={{ y: [0, -20, 0] }}
         transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
         >
-        <div className="absolute inset-0 w-76 h-76 rounded-full overflow-hidden m-2">
+        <div className="absolute z-0 inset-0 w-76 h-76 rounded-full overflow-hidden m-2">
           <Image 
             src= "/assets/profile.png"
             alt="Profile" 

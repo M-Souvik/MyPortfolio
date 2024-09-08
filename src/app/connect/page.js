@@ -46,7 +46,7 @@ const Connect = () => {
           WANT TO CONNECT WITH ME...?
         </h1>
       </motion.div>
-      <p className="text-center text-xl md:text-3xl md:p-4 md:mx-10">Hey there, If you want to connect to me, Please fill in to this form and I will connect to you right away!</p>
+      <p className="text-center text-xl md:text-3xl md:p-4 md:mx-10 text-white">Hey there, If you want to connect to me, Please fill in to this form and I will connect to you right away!</p>
       <div className="flex justify-center min-h-screen bg-transparent">
         <div className="w-96">
           <form onSubmit={handleSubmit} className="w-full h-full mt-12">
@@ -59,7 +59,7 @@ const Connect = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                className="mt-1 p-2 w-full border border-gray-300 rounded-md text-white"
               />
             </div>
             <div>
@@ -71,7 +71,7 @@ const Connect = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                className="mt-1 p-2 w-full border border-gray-300 rounded-md text-white"
               />
             </div>
             <div>
@@ -83,7 +83,7 @@ const Connect = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                className="mt-1 p-2 w-full border border-gray-300 rounded-md text-white"
               ></textarea>
             </div>
             <div className="flex justify-center">

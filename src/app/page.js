@@ -31,8 +31,8 @@ export default function Home() {
         <ProfilePhoto/>
     </div>
     <div className="">
-       <h1 className="text-xl md:text-3xl text-white text-center mt-4 md:mt-36">Myself,</h1>
-       <p className="text-center text-5xl md:text-8xl font-abel font-extrabold">Souvik Mondal<br/></p>
+       <h1 className="text-xl md:text-3xl text-slate-300 text-center mt-4 md:mt-36">Myself,</h1>
+       <p className="text-center text-5xl md:text-8xl font-abel font-extrabold text-white">Souvik Mondal<br/></p>
        <p className="text-blue-500 text-3xl font-abel text-center">Full Stack Web Developer</p>
     <div className="flex flex-row gap-5 justify-center mt-8">
       <Link href="https://l1nk.dev/inUXt" className="rounded-full w-fit h-fit  bg-slate-300 opacity-75">
@@ -46,8 +46,8 @@ export default function Home() {
       </Link>
     </div>
     <div className="m-4 flex flex-row gap-5 justify-center">
-      <Link className="border-2 border-cyan-500 bg-transparent p-4 rounded-lg hover:bg-cyan-500 transition duration-900 ease-in-out hover:text-black" href="#connect">Connect with me {'>'}</Link>
-      <a className="flex justify-center gap-2 border-2 border-cyan-500 bg-cyan-500 text-black p-4 rounded-lg hover:bg-transparent transition duration-900 ease-in-out hover:text-slate-800" href="https://drive.google.com/uc?export=download&id=10ULHFGHcMGxk3NE3nXEvFzJOvlrG6ozI" download>Download CV <FaFileDownload size={20}/></a>
+      <Link className="border-2 border-cyan-500 bg-transparent p-4 rounded-lg hover:bg-cyan-500 transition duration-900 ease-in-out hover:text-black text-white" href="#connect">Connect with me {'>'}</Link>
+      <a className="flex justify-center gap-2 border-2 border-cyan-500 bg-cyan-500 text-black p-4 rounded-lg hover:bg-transparent transition duration-900 ease-in-out hover:text-slate-800" href="https://drive.google.com/file/d/13WhP-niWvkgzt-6u5Ctv7IuAR8eC1e-S/view?usp=drive_link" download>Download CV <FaFileDownload size={20}/></a>
     </div>
     </div>
     </div>
