@@ -1,8 +1,10 @@
 import { Inter } from "next/font/google";
 import "./styles/globals.css";
 import Nav from "@/components/Navbar";
-import Starfield from 'react-starfield';
-import { Toaster } from "@/components/ui/sonner"
+// import Starfield from 'react-starfield';
+import { Toaster } from "sonner"
+import { Particles } from "@/components/magicui/particles";
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,16 +16,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-black">
-      <Starfield
-        starCount={10000}
-        starColor={[255, 255, 255]}
-        speedFactor={0.1}
-        backgroundColor="black"
+       <Particles
+        className="fixed inset-0 z-0 h-full w-full"
+        quantity={200}
+        ease={100}
+        color={"#ffffff"}
+        refresh
       />
           <Nav/>
           {children}
-          <Toaster />
+          <Footer/>
       </body>
+          <Toaster richColors/>
     </html>
   );
 }

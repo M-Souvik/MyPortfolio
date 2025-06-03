@@ -2,7 +2,11 @@
 "use client"
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { toast } from "sonner"
+import { toast, Toaster } from "sonner"
+import ConnectForm from '@/components/sections/connect/ConnectForm';
+import { TextAnimate } from '@/components/magicui/text-animate';
+import Image from 'next/image';
+// import { Globe } from '@/components/magicui/globe';
 
 const Connect = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -15,6 +19,7 @@ const Connect = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const toastId=toast.loading("Launching Message...")
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -26,78 +31,35 @@ const Connect = () => {
 
       if (response.ok) {
         setFormData({ name: '', email: '', message: '' });
-        toast("Mission Accomplished! Your Message Sent Successfully.")
+        toast.success("Mission Accomplished! Your Message Sent Successfully.", { id: toastId })
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      toast("Mission Failed! Failed to send message.")
+      toast.error("Mission Failed! Failed to send message.", { id: toastId })
     }
   };
 
   return (
-    <>
-      <motion.div
-        className="w-full h-fit opacity-65"
-        animate={{ y: [0, -20, 0] }}
-        id="connect"
-        transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
-      >
-        <h1 className="text-white text-center text-3xl md:text-6xl font-bold font-abel w-full ">
-          WANT TO CONNECT WITH ME...?
-        </h1>
-      </motion.div>
-      <p className="text-center text-xl md:text-3xl md:p-4 md:mx-10 text-white">Hey there, If you want to connect to me, Please fill in to this form and I will connect to you right away!</p>
-      <div className="flex justify-center min-h-screen bg-transparent">
-        <div className="w-96">
-          <form onSubmit={handleSubmit} className="w-full h-full mt-12">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-400">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="mt-1 p-2 w-full border border-gray-300 rounded-md text-white"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-400 mt-4">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="mt-1 p-2 w-full border border-gray-300 rounded-md text-white"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-400 mt-4">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="mt-1 p-2 w-full border border-gray-300 rounded-md text-white"
-              ></textarea>
-            </div>
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 mt-4"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
+    <div id='connect' className='overflow-hidden relative flex flex-col items-center justify-center lg:h-[70vh] sm:px-10 px-2 w-full'>
+
+
+      <div className="grid  sm:grid-cols-2 items-center w-full  bg-transparent">
+        <div className='relative left-0 flex flex-col h-full items-center justify-center'>
+          <Image src={'/assets/earth.png'} width={1000} height={1000} className='h-[30rem] w-[30rem] relative z-30 object-contain'/>
+        <div className='absolute z-50'>
+          <TextAnimate animation="blurInUp" by="character" once className="text-white font-outline-4  text-center  uppercase text-4xl sm:text-6xl font-bold font-abel w-full mt-12 sm:mb-10">
+            Let's Connect
+          </TextAnimate>
+        </div>
+
+      {/* <Globe/> */}
+      </div>
+        <div className="w-full flex items-center justify-center pb-3">
+          <ConnectForm handleChange={handleChange} formData={formData} handleSubmit={handleSubmit}/>
         </div>
       </div>
-    </>
+      {/* <Toaster/> */}
+    </div>
   );
 };
 

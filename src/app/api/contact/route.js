@@ -25,7 +25,7 @@ export async function POST(request) {
     let mailOptions = {
       from: process.env.EMAIL_USER,
       to: 'sm6984767@gmail.com',
-      subject: 'New Contact Form Message',
+      subject: `New Contact Form Message - ${name} - ${new Date()}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
 

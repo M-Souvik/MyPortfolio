@@ -7,6 +7,25 @@
 *{
     font-family: "Anta", sans-serif;
 }
+
+/* body{
+  overflow: hidden;
+} */
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px white;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px white;
+  }
+}
+
+.react-flow__attribution{
+  display: none !important;
+}
+
+
 @media (max-width: 640px) {
   body {
     overflow-x: hidden;
@@ -39,7 +58,7 @@ html{
     animation: marquee 10s linear infinite;
   }
 
-  @layer base {
+  /* @layer base {
     :root {
       --background: 0 0% 100%;
       --foreground: 0 0% 3.9%;
@@ -104,4 +123,4 @@ html{
       @apply bg-background text-foreground;
     }
   }
-  
+   */
